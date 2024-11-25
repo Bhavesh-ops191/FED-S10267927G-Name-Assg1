@@ -1,7 +1,30 @@
 
-li:hover {
+h1{
+    position: absolute;
     color: aliceblue;
+    top: 60%;
+    font-size: 100px;
+    z-index: 1;
 }
+
+img.crew{
+    filter: brightness(1);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1:hover + img.crew{
+    filter: brightness(0.5);
+    transition:  filter 1s ease; 
+}
+
+img.crew:hover{
+    filter: brightness(0.5);
+    transition:  filter 1s ease; 
+}
+
 nav{
     background-color:pink;
     padding: 10px;
@@ -59,4 +82,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.imgText{
+    display: inline;
 }
