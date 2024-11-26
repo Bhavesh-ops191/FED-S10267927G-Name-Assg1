@@ -1,40 +1,13 @@
-
-h1{
-    position: absolute;
-    color: aliceblue;
-    top: 60%;
-    font-size: 100px;
-    z-index: 1;
-}
-
-img.crew{
-    filter: brightness(1);
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-}
-
-h1:hover + img.crew{
-    filter: brightness(0.5);
-    transition:  filter 1s ease; 
-}
-
-img.crew:hover{
-    filter: brightness(0.5);
-    transition:  filter 1s ease; 
-}
-
 nav{
     background-color:pink;
     padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .navdiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-
 }
 
 li a {
@@ -81,22 +54,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
 }
 
-.imgText{
-    display: inline;
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: large;
+}
+
+h1,h2{
+    letter-spacing: 2px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 p{
     font-family: 'Outfit', sans-serif;
-    text-align: center;
     letter-spacing: 0.5px;
-}
-
-h4{
-    text-decoration: underline;
-    text-align: center;
-    font-size: large;
 }
