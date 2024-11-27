@@ -122,15 +122,50 @@ h1,h2{
 section{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     width: 80%;
     margin: 0 auto;
     padding: 20px;
     gap: 24px;
 }
 
-.wrapper{
+
+.image{
     display: flex;
+    position: relative;
+
+}
+
+.image img{
+    border-radius: 10px;
+    width: 200px;
+    height: inherit;
+    filter: brightness(1);
+    transition: filter 1s ease; /* Smooth transition */
+
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    flex-direction: column;
+    margin: 10px;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.content h1, .content p {
+    margin: 0;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.image:hover img {
+    filter: brightness(0.5);
+}
+
+.image:hover .content {
+    opacity: 1;
 }
