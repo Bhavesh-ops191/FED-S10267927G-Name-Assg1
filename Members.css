@@ -56,11 +56,12 @@ body {
     padding: 0;
 }
 
-h1{
+h1,h2{
     font-family: 'Space Grotesk', sans-serif;
     text-align: center;
     letter-spacing: 2px;
 }
+
 
 .container {
 	padding: 2rem;
@@ -117,3 +118,21 @@ h1{
 .slider-nav a:hover {
 	opacity: 1;
 }
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 24px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper img{}
