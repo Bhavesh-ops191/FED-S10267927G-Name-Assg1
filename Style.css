@@ -17,17 +17,18 @@ img.crew{
 
 h1:hover + img.crew{
     filter: brightness(0.5);
-    transition:  filter 1s ease; 
+    transition:1s;
 }
 
 img.crew:hover{
     filter: brightness(0.5);
-    transition:  filter 1s ease; 
+    transition:1s; 
 }
 
 nav{
     background-color:pink;
     padding: 10px;
+    
 }
 .navdiv{
     display: flex;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Merch.css">
+</head>
+<body>
+    <nav>
+        <div class="navdiv">
+            <div class="Home">
+                <a href="Le ssarafim.html">
+                    <img src="Home-Icon.png" style="width: 60px;" alt="Home Icon">
+                </a>
+            </div>
+            <div class="Logo">
+                <a href="Le ssarafim.html">
+                    <img src="Le-sserafim-Logo.png" style="width: 180px;" alt="Le Sserafim Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="Le ssarafim AboutUs.html">About Us</a></li>
+                <li><a href="Le ssarafim members.html">Members</a></li>
+                <li><a href="Merch.html">Merch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>MERCH</h1>
+    <div class="cover">
+        <div id="searchBox">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search product name here.."/>
+          <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('All')">
+            All
+            </button>
+            <button class="button-value" onclick="filterProduct('BottomWear')">
+            BottomWear
+            </button>
+            <button class="button-value" onclick="filterProduct('Albums')">
+            Albums
+            </button>
+            <button class="button-value" onclick="filterProduct('Bags')">
+            Bags
+            </button>
+            <button class="button-value" onclick="filterProduct('TopWear')">
+            TopWear
+            </button>
+            <button class="button-value" onclick="filterProduct('Accessories')">
+            Accessories
+            </button>
+        </div>
+        <div id="products"></div>
+      </div>
+      <script src="merch.js"></script>
+    <script></script>
+</body>
