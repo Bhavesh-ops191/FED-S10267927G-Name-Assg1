@@ -25,57 +25,75 @@ img.crew:hover{
     transition:1s; 
 }
 
-nav{
-    background-color:pink;
-    padding: 10px;
-    
-}
-.navdiv{
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: pink;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-li a {
+.Logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+nav img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
     color: aliceblue;
-    text-decoration: none;  
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
     position: relative;
+    padding: 5px 0;
+    transition: 0.3s;
 }
 
-li a::after {
+nav li a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;  
-    width: 100%;
+    bottom: -5px;
+    width: 0;
     height: 2px;
-    background-color: pink;
-    transition:3s;
-}
-
-li:hover a::after {
     background-color: aliceblue;
+    transition: 0.3s;
 }
 
-li{
-
-    padding: 20px ;
-    display: inline-block;
-}
-.Logo{
-    position: absolute;
+nav li a:hover::after {
+    width: 100%;
 }
 
-.Home{
+nav li a:hover {
+    color: aliceblue;
+}
+
+.Home {
     margin-right: auto;
-}
-
-ul{
-    position: absolute;
-    right: 130px;
-    top: 0px;
 }
 
 body {
@@ -85,6 +103,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
 
 .imgText{
     display: inline;
