@@ -165,6 +165,7 @@ let products = {
   });
   //Initially display all products
   window.onload = () => {
-    filterProduct("all");
+    filterProduct("All");
+    document.getElementById("all-button").classList.add("active");
   };
   
