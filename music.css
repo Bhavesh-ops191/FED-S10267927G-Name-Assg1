@@ -1,0 +1,139 @@
+.box-1{
+    background: linear-gradient(pink -20%, rgb(245, 140, 157));
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    padding: 10px;
+}
+
+.box-1{
+    flex-direction: column;
+    width: 250px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgb(29, 28, 28);
+}
+
+.art-name{
+    text-align: center;
+    overflow: hidden;
+    width: 170px;
+}
+
+.art-name p{
+    font-weight: bold;
+}
+
+.run{
+    animation: run 6s linear infinite;
+}
+
+@keyframes run{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 700px) {
+    .volume{
+        display: none;
+    }
+    .box-1{
+        height: 100px;
+    }
+    .temp{
+        display: none;
+    }
+  }
+
+.ctrl{
+    cursor: pointer;
+    background-color: rgb(238, 211, 224);
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    margin:  8px;
+}
+.msc{
+    margin-top: 9px;
+}
+.ctrl:active{
+    transform: scale(0.9);
+}
+
+.none{
+    display: none;
+}
+
+.prog{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.line{
+    width: 100%;
+    background-color: aliceblue;
+    height: 3px;
+    border-radius: 30%;
+    position: relative;
+    cursor: pointer;
+}
+.lineChild{
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(253, 207, 215);
+    border-radius: 30%;
+    width: 0%;
+    height: 3px;
+    transition: width 0.1s;
+}
+
+.lineChild::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    top: -3px;
+    right: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.volume{
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    left : 0;
+    bottom: 0;
+    z-index: 5;
+    padding: 10px;
+    background: linear-gradient(pink -20%, rgb(245, 140, 157));
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 1px 5px rgb(29, 28, 28);
+    padding: 20px;
+}
+.volume img{
+    width: 40px;
+}
