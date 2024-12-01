@@ -53,6 +53,45 @@
         <button class="sold-out-button" disabled>SOLD OUT</button>        
         </div>
     </div>
+    <div class="box" style="display: none;">
+        <div class="box-1 center">
+            <div class="art-name">
+                <p class="name run">PERFECT NIGHT</p>
+            </div>
+            <div class="prog">
+                <div class="time">
+                    <div class="start">
+                        <p id="start">0:00</p>
+                    </div>
+                    <div class="end">
+                        <p id="end">0:00</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="lineChild"></div>
+                </div>
+            </div>
+            <div class="msc center">
+                <div class="ctrl center" onclick="backward()">
+                    <p class="fa-solid backward">◁</p>
+                </div>
+                <div class="ctrl center" id="playsong">
+                    <p class="fa-solid play">▶<p>
+                    <p class="fa-solid pause none">❚❚</p>
+                </div>
+                <div class="ctrl center" onclick="forward()">
+                    <p class="fa-solid forward">▷</p>
+                </div>
+                <audio src="" class="song"></audio>
+            </div>
+        </div>
+    </div>
+    <div class="volume" style="display: none;">
+        <img src="volume-low-icon.png">
+        <div class="volume-slider"></div>
+            <input type="range" id="volume" min="0" max="100" value="50">
+        </div>
+    </div>
     <script src="music.js"></script>
     <script src="item.js"></script>
 </body>

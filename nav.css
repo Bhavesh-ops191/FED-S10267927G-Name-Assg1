@@ -20,7 +20,6 @@ nav {
 nav img {
     width: auto;
     height: 50px;
-
 }
 
 
@@ -42,7 +41,6 @@ nav li a {
     font-weight: bold;
     position: relative;
     padding: 5px 0;
-    transition: 0.3s;
 }
 
 nav li a::after {

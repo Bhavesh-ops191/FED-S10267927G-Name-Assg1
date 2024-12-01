@@ -51,7 +51,6 @@ function createBuyButton() {
     
     buyButton.addEventListener("click", () => {
         alert("Thank you for your purchase!");
-        // You can add any functionality here for the actual purchase flow
     });
     
     productInfoDiv.appendChild(buyButton);

@@ -7,8 +7,6 @@ const lineChild = document.querySelector('.lineChild');
 const progressBar = document.querySelector('.line');
 const startTime = document.querySelector('#start');
 const endTime = document.querySelector('#end');
-
-// Volume slider
 const volumeSlider = document.querySelector('#volume');
 const volumeIcon = document.querySelector('.volume img');
 
