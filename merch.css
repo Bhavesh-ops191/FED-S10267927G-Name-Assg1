@@ -60,6 +60,7 @@ body {
     grid-template-columns: auto auto auto;
     grid-column-gap: 1.5em;
     padding: 2em 0;
+    justify-content: center;
   }
   .card {
     background-color: #ffffff;
@@ -102,3 +103,19 @@ body {
       grid-column-gap: 1em;
     }
   }
+  .no-stock {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(255, 88, 88);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .image-container {
+    position: relative;
+  }
+  

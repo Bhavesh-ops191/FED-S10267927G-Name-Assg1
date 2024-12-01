@@ -54,6 +54,7 @@ function pauseSong() {
 // Forward to the next song
 function forward() {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
+    console.log(`Forwarding to song index: ${currentSongIndex}`); // Debug log
     loadSong(currentSongIndex);
     playSong();
 }
@@ -85,6 +86,7 @@ function resetProgress() {
 // Play the next song automatically when the current song ends
 function handleSongEnd() {
     forward();
+    console.log("Song ended. Moving to the next song.");
 }
 
 // Change volume based on slider value

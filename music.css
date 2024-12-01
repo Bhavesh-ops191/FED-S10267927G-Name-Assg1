@@ -137,3 +137,40 @@
 .volume img{
     width: 40px;
 }
+#volume {
+    -webkit-appearance: none;
+    height: 5px;
+    background: pink;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  #volume:hover {
+    opacity: 1; /* Increases opacity when hovered */
+  }
+  
+  /* Style the thumb/slider button */
+  #volume::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default styling */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #volume::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

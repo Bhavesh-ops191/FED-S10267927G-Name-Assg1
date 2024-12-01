@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="Item.css">
+    <link rel="stylesheet" href="Normalize.cs">
+    <link rel="stylesheet" href="nav.css">                                          
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="Home">
+            <a href="Index.html">
+                <img src="Home-Icon.png" alt="Home Icon">
+            </a>
+        </div>
+        <div class="Logo">
+            <a href="Index.html">
+                <img src="Le-sserafim-Logo.png" alt="Le Sserafim Logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="Le ssarafim AboutUs.html">About Us</a></li>
+            <li><a href="Le ssarafim members.html">Members</a></li>
+            <li><a href="Merch.html">Merch</a></li>
+        </ul>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-image">
+          <img src="Tote Bag.png" id="product-image" />
+        </div>
+        <div class="product-info">
+          <h2 class="stock">No Stock</h2>
+          <h1 class="product-title">Tote Bag</h1>
+          <p class="product-price">$12.29</p>
+          <div class="preorder-info">
+            <p><strong>For pre-order</strong></p>
+            <p>Scheduled Shipping Start Date: <br> Jan 9, 2025 ~ Jan 16, 2025</p>
+            <p class="notice">Scheduled Delivery Date is subject to product and logistics issues and may face delays. If the schedule is changed, customers will be notified individually.</p>
+          </div>
+    
+          <div class="quantity-selector">
+            <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+            <span id="quantity">1</span>
+            <button class="quantity-button" onclick="increaseQuantity()">+</button>
+        </div>
+        <button class="sold-out-button" disabled>SOLD OUT</button>        
+        </div>
+    </div>
+
+    <script src="item.js"></script>
+</body>
+</html>
