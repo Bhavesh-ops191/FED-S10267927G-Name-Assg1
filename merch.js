@@ -17,7 +17,7 @@ let products = {
       {
         productName: "Tote Bag",
         category: "Bags",
-        price: "48.37",
+        price: "22.57",
         image: "Tote Bag.png",
         itemStock: "False"
       },

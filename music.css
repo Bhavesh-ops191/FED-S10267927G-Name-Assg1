@@ -102,12 +102,7 @@
 }
 .lineChild{
     position: absolute;
-    cursor: pointer;
-    background-color: rgb(253, 207, 215);
-    border-radius: 30%;
     width: 0%;
-    height: 3px;
-    transition: width 0.1s;
 }
 
 .lineChild::after{

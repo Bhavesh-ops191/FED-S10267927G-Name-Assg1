@@ -1,3 +1,21 @@
+img.crew{
+    filter: brightness(1);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1:hover + img.crew{
+    filter: brightness(0.5);
+    transition:1s;
+}
+
+img.crew:hover{
+    filter: brightness(0.5);
+    transition:1s; 
+}
+
 h1{
     position: absolute;
     color: aliceblue;

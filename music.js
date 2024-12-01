@@ -54,7 +54,6 @@ function pauseSong() {
 // Forward to the next song
 function forward() {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
-    console.log(`Forwarding to song index: ${currentSongIndex}`); // Debug log
     loadSong(currentSongIndex);
     playSong();
 }
@@ -91,16 +90,16 @@ function handleSongEnd() {
 
 // Change volume based on slider value
 volumeSlider.addEventListener('input', function() {
-    const volume = volumeSlider.value / 100; // Normalize volume to 0-1
-    audio.volume = volume;  // Set audio volume
+    const volume = volumeSlider.value / 100; 
+    audio.volume = volume;
     
     // Update volume icon based on the volume level
     if (volume === 0) {
-        volumeIcon.src = 'volume-muted-icon.png'; // Muted icon
+        volumeIcon.src = 'volume-muted-icon.png';
     } else if (volume < 0.5) {
-        volumeIcon.src = 'volume-low-icon.png'; // Low volume icon
+        volumeIcon.src = 'volume-low-icon.png';
     } else {
-        volumeIcon.src = 'volume-high-icon.png'; // High volume icon
+        volumeIcon.src = 'volume-high-icon.png';
     }
 
     // Save volume to localStorage

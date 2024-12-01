@@ -1,22 +1,3 @@
-img.crew{
-    filter: brightness(1);
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-}
-
-h1:hover + img.crew{
-    filter: brightness(0.5);
-    transition:1s;
-}
-
-img.crew:hover{
-    filter: brightness(0.5);
-    transition:1s; 
-}
-
-
 nav {
     position: sticky;
     top: 0;
@@ -39,7 +20,7 @@ nav {
 nav img {
     width: auto;
     height: 50px;
-    margin-right: 20px;
+
 }
 
 
@@ -77,10 +58,6 @@ nav li a::after {
 
 nav li a:hover::after {
     width: 100%;
-}
-
-nav li a:hover {
-    color: aliceblue;
 }
 
 .Home {
